@@ -6,7 +6,7 @@ body {
 }
 
 body div {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .sidebar {
@@ -32,6 +32,7 @@ body div {
   grid-template-columns: 1fr 4fr;
   align-items: center;
   gap: 1rem;
+  margin: 0.75rem;
 }
 
 .sidebar-title {
@@ -40,4 +41,45 @@ body div {
 
 .sidebar-icon {
   justify-self: center;
+}
+
+.main-content {
+  padding: 1rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  font-size: 0.8rem;
+}
+
+.card-content > p {
+  margin: 0rem;
+  margin-bottom: 0.25rem;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-left: 5px solid #f0ba26;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-footer {
+  display: flex;
+  justify-content: right;
+  margin: 0.75rem;
+}
+
+.card-footer > svg {
+  margin: 0.25rem;
+  transform: scale(0.75);
 }
